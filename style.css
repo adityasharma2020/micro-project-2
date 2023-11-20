@@ -138,10 +138,6 @@
 	width: 12rem;
 }
 
-.open {
-	display: block;
-}
-
 .dropdown_links {
 	display: none;
 	background-color: #6f6af799;
@@ -156,6 +152,9 @@
 	align-items: center;
 	justify-content: center;
 	transition: height 0.2s;
+}
+.open {
+	display: block;
 }
 
 .dropDown__searchbar {
@@ -504,7 +503,7 @@ button > i {
 	.searchBar {
 		display: none;
 	}
-	.menu > .searchBar{
+	.menu > .searchBar {
 		display: block;
 	}
 	.chatIcon {
