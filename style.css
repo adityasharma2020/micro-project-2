@@ -143,7 +143,7 @@
 }
 
 .dropdown_links {
-	/* display: none; */
+	display: none;
 	background-color: #6f6af799;
 	padding: 3rem 6rem;
 	position: absolute;
@@ -504,7 +504,7 @@ button > i {
 	.searchBar {
 		display: none;
 	}
-	.menu > .searchBar {
+	.menu > .searchBar{
 		display: block;
 	}
 	.chatIcon {
