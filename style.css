@@ -139,7 +139,7 @@
 }
 
 .open {
-	display: none;
+	display: block;
 }
 
 .dropdown_links {
