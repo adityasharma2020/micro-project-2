@@ -21,6 +21,7 @@
 	position: fixed;
 	bottom: 3rem;
 	right: 3rem;
+	cursor: pointer;
 }
 
 .chatIcon {
@@ -46,8 +47,8 @@
 }
 
 .socialIcon {
-	/* background-color: #483eff; */
 	width: 4rem;
+	cursor: pointer;
 }
 .socialIcon img {
 	width: 100%;
@@ -107,6 +108,7 @@
 .searchBar {
 	position: relative;
 }
+
 .searchBar > input {
 	height: 2.5rem;
 	border-radius: 1.5rem;
@@ -121,6 +123,10 @@
 	color: #adadad;
 	padding: 0.8rem;
 	cursor: pointer;
+}
+
+.searchBar input:not(:placeholder-shown) + i {
+	display: none;
 }
 
 .toggle_btn {
@@ -153,12 +159,16 @@
 }
 
 .dropdown_links {
-	display: none;
-	background-color: #6f6af7a0;
-	padding: 3rem 6rem;
-	position: absolute;
 	height: 0;
-	top: 60px;
+	overflow: hidden;
+	background-color: #6f6af7f9;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 0; /* Adjust padding as needed */
+	position: absolute;
+	top: 5.3rem;
 	right: 3rem;
 	gap: 2rem;
 	width: 18rem;
@@ -166,11 +176,10 @@
 	border-radius: 20px;
 	align-items: center;
 	justify-content: center;
-	transition: height 2s;
+	transition: height 0.5s ease-in-out;
 }
-.open {
-	height: auto;
-	display: block;
+.dropdown_links.open {
+	height: 350px; /* Adjust as needed */
 }
 
 .dropDown__searchbar {
@@ -553,7 +562,7 @@ button > i {
 		width: 3rem;
 	}
 
-	.socialContainer{
+	.socialContainer {
 		padding-top: 10rem;
 	}
 	.cards {

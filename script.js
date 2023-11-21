@@ -4,15 +4,17 @@ const navbar = document.getElementById('navbar');
 const logo = document.getElementById('logo');
 
 toggleBtn.onclick = function () {
-	dropDownLinks.classList.toggle('open');
+    dropDownLinks.classList.toggle('open');
 };
 
+// to make the navbar and logo smaller on scroll
 window.addEventListener('scroll', () => {
-	if (navbar && window.scrollY > 100) {
-		navbar.classList.add('scroll');
-		logo.classList.add('logoScroll');
-	} else {
-		navbar.classList.remove('scroll');
-		logo.classList.remove('logoScroll');
-	}
+    if (navbar && window.scrollY > 100) {
+        navbar.classList.add('scroll');
+        logo.classList.add('logoScroll');
+    } else {
+        navbar.classList.remove('scroll');
+        logo.classList.remove('logoScroll');
+    }
 });
+
