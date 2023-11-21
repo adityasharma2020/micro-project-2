@@ -169,7 +169,7 @@
 	height: 40vw;
 	justify-content: space-between;
 	gap: 2rem;
-	background-color: aqua;
+	
 
 	margin: 2rem 0rem;
 	padding: 4rem 2rem 4rem 6rem;
@@ -542,7 +542,7 @@ button > i {
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		background-color: aqua;
+	
 		padding-left: 2.5rem;
 	}
 
